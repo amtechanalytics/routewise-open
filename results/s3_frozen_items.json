@@ -1,0 +1,28 @@
+{
+  "in_card_vs_out": {
+    "cuad.L2": [
+      31,
+      77
+    ],
+    "fda.L2": [
+      2,
+      29
+    ],
+    "fin.L2": [
+      8,
+      353
+    ],
+    "mhrag.L2": [
+      8,
+      13
+    ],
+    "qasper.L2": [
+      31,
+      141
+    ]
+  },
+  "s3_items.jsonl": {
+    "items": 1677,
+    "sha256": "1c3d7896da93cef6f6f8d97aca225e5f2e69f5cb221e35be29a0720e9ff3aeb0"
+  }
+}

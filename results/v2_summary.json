@@ -1,0 +1,22 @@
+{
+ "pass": {
+  "R1": false,
+  "R2": false,
+  "R2_sensitivity_valid_items": null,
+  "R3": false,
+  "R4": false,
+  "R5": false,
+  "R6": true,
+  "S1": false,
+  "S2": false,
+  "S3": false,
+  "S4": false,
+  "S5": false
+ },
+ "strongest_L2": {
+  "cuad.L2": "sac",
+  "fda.L2": "sac",
+  "fin.L2": "meta",
+  "mhrag.L2": "flat"
+ }
+}

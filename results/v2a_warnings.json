@@ -1,0 +1,6 @@
+[
+ {
+  "msg": "fin.L2.test: only 99 of 300 rewrites pass the automatic checks (< 50 %); reasons {'not_unique': 188, 'no_identity': 12, 'name_leak': 1}",
+  "stage": "rewritecheck"
+ }
+]

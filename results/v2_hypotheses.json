@@ -1,0 +1,323 @@
+{
+ "R1": {
+  "cuad.L2|pdoc": {
+   "R": 0.34,
+   "holm_p": 2e-05,
+   "p": 0.0,
+   "pdoc": 0.17333
+  },
+  "cuad.L2|pdoc-rr": {
+   "R": 0.34,
+   "holm_p": 0.00748,
+   "p": 0.00249,
+   "pdoc-rr": 0.23333
+  },
+  "fda.L2|pdoc": {
+   "R": 0.32121,
+   "holm_p": 0.00065,
+   "p": 0.00032,
+   "pdoc": 0.19394
+  },
+  "fda.L2|pdoc-rr": {
+   "R": 0.32121,
+   "holm_p": 0.16029,
+   "p": 0.08014,
+   "pdoc-rr": 0.25455
+  },
+  "fin.L2|pdoc": {
+   "R": 0.40217,
+   "holm_p": 9e-05,
+   "p": 3e-05,
+   "pdoc": 0.22826
+  },
+  "fin.L2|pdoc-rr": {
+   "R": 0.40217,
+   "holm_p": 2e-05,
+   "p": 1e-05,
+   "pdoc-rr": 0.17391
+  },
+  "mhrag.L2|pdoc": {
+   "R": 0.63986,
+   "holm_p": 0.90995,
+   "p": 0.90995,
+   "pdoc": 0.64685
+  },
+  "mhrag.L2|pdoc-rr": {
+   "R": 0.63986,
+   "holm_p": 0.16029,
+   "p": 0.13737,
+   "pdoc-rr": 0.69231
+  },
+  "pass": false,
+  "pdoc": {
+   "ci": [
+    0.08126,
+    0.14933
+   ],
+   "pass": true,
+   "pooled": 0.11521,
+   "sources_holm_sig": 3
+  },
+  "pdoc-rr": {
+   "ci": [
+    0.05136,
+    0.12357
+   ],
+   "pass": false,
+   "pooled": 0.08729,
+   "sources_holm_sig": 2
+  }
+ },
+ "R2": {
+  "ci": [
+   -0.04181,
+   0.00563
+  ],
+  "pass": false,
+  "pooled_diff": -0.01782,
+  "sources_holm_sig": 0,
+  "strongest": {
+   "cuad.L2": "sac",
+   "fda.L2": "sac",
+   "fin.L2": "meta",
+   "mhrag.L2": "flat"
+  }
+ },
+ "R2_sensitivity_valid_items": {
+  "ci": [
+   -0.16667,
+   0.1875
+  ],
+  "n": {
+   "cuad.L2": 4,
+   "fda.L2": 4,
+   "fin.L2": 1,
+   "mhrag.L2": 6
+  },
+  "pooled_diff": 0.02083
+ },
+ "R3": {
+  "ci": [
+   -0.0275,
+   0.015
+  ],
+  "margin": -0.02,
+  "pass": false,
+  "pooled_R_minus_meta": -0.00667
+ },
+ "R4": {
+  "ci": [
+   -0.04767,
+   0.00023
+  ],
+  "pass": false,
+  "pooled_diff_vs_strongest": -0.02354
+ },
+ "R5": {
+  "ci": [
+   -0.0199,
+   -0.00937
+  ],
+  "ece_calibrated": 0.12231,
+  "ece_raw": 0.03991,
+  "n_resolver_decisions": 1112,
+  "pass": false,
+  "wrong_scope_R_minus_uncal": -0.01449
+ },
+ "R6": {
+  "cost_per_query_usd": {
+   "R": 0.00068,
+   "hdrr": 0.0004,
+   "meta": 0.0003,
+   "pdoc": 0.0003,
+   "pdoc-rr": 0.0003,
+   "sac": 0.0003
+  },
+  "dominated_by": [],
+  "note": "API cost per query (router + resolver + generation); the cross-encoder runs on CPU and is reported in diag_rerank.json",
+  "pass": true
+ },
+ "S1": {
+  "cuad": {
+   "hdrr_gain": [
+    0.25333,
+    0.0,
+    -0.01333
+   ],
+   "levels": [
+    "L0",
+    "L1",
+    "L2"
+   ],
+   "monotone": true,
+   "router_resolution": [
+    0.89,
+    0.0,
+    0.0
+   ]
+  },
+  "fda": {
+   "hdrr_gain": [
+    -0.02333,
+    -0.05769,
+    -0.00606
+   ],
+   "levels": [
+    "L0",
+    "L1",
+    "L2"
+   ],
+   "monotone": false,
+   "router_resolution": [
+    0.92,
+    0.75,
+    0.0
+   ]
+  },
+  "fin": {
+   "hdrr_gain": [
+    0.03667,
+    0.03546,
+    0.0
+   ],
+   "levels": [
+    "L0",
+    "L1",
+    "L2"
+   ],
+   "monotone": true,
+   "router_resolution": [
+    0.89,
+    0.88298,
+    0.08696
+   ]
+  },
+  "mhrag": {
+   "hdrr_gain": [
+    -0.20667,
+    -0.02098
+   ],
+   "levels": [
+    "L0",
+    "L2"
+   ],
+   "monotone": false,
+   "router_resolution": [
+    0.12,
+    0.0
+   ]
+  },
+  "pass": false
+ },
+ "S2": {
+  "ci": [
+   -0.045,
+   0.01833
+  ],
+  "gap_recovered": {
+   "md2d.L0": -0.27273,
+   "qasper.L0": -0.04464
+  },
+  "pass": false,
+  "pooled_R_minus_meta": -0.01333
+ },
+ "S3": {
+  "L0": {
+   "flat": {
+    "R_loss": 0.01333,
+    "ci": [
+     -0.01667,
+     0.03
+    ],
+    "diff": 0.00667,
+    "flat_loss": 0.00667
+   },
+   "hdrr": {
+    "R_loss": 0.01333,
+    "ci": [
+     0.01,
+     0.06667
+    ],
+    "diff": 0.03667,
+    "hdrr_loss": -0.02333
+   },
+   "meta": {
+    "R_loss": 0.01333,
+    "ci": [
+     -0.01667,
+     0.06333
+    ],
+    "diff": 0.02333,
+    "meta_loss": -0.01
+   }
+  },
+  "L2": {
+   "flat": {
+    "R_loss": 0.0,
+    "ci": [
+     0.0,
+     0.03261
+    ],
+    "diff": 0.01087,
+    "flat_loss": -0.01087
+   },
+   "hdrr": {
+    "R_loss": 0.0,
+    "ci": [
+     0.0,
+     0.03261
+    ],
+    "diff": 0.01087,
+    "hdrr_loss": -0.01087
+   },
+   "meta": {
+    "R_loss": 0.0,
+    "ci": [
+     -0.03261,
+     0.0
+    ],
+    "diff": -0.01087,
+    "meta_loss": 0.01087
+   }
+  },
+  "pass": false
+ },
+ "S4": {
+  "deep": [
+   -9e-05,
+   -0.02243,
+   0.02225
+  ],
+  "interaction_ci": [
+   -0.0605,
+   0.02753
+  ],
+  "n_deep": 1571,
+  "n_shallow": 925,
+  "pass": false,
+  "shallow": [
+   0.0169,
+   -0.01744,
+   0.05226
+  ]
+ },
+ "S5": {
+  "R-shuf": {
+   "R_minus": 0.01185,
+   "ci": [
+    -0.01139,
+    0.03527
+   ],
+   "pass": false
+  },
+  "R-title": {
+   "R_minus": 0.01779,
+   "ci": [
+    -0.00265,
+    0.03864
+   ],
+   "pass": false
+  },
+  "pass": false
+ }
+}

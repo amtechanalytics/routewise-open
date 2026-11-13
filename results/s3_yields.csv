@@ -1,0 +1,10 @@
+config,items,leak_ok,oracle_correct_original,oracle_correct_rewrite,panel_ok,accepted,test_items,dev_items,eligible,reasons
+cuad.L1,1500,1308,746,709,528,528,400,100,1,"{""no_unique_partial_form"": 192, ""ok"": 528, ""oracle_missing"": 2, ""oracle_wrong_on_original"": 637, ""oracle_wrong_on_rewrite"": 94, ""panel_rejects"": 47}"
+cuad.L2,1500,1408,746,592,108,108,89,19,0,"{""not_unique"": 90, ""ok"": 108, ""oracle_missing"": 3, ""oracle_wrong_on_original"": 701, ""oracle_wrong_on_rewrite"": 245, ""panel_rejects"": 351, ""too_few_facts"": 2}"
+fda.L1,1500,318,1036,246,15,15,14,1,0,"{""no_identity"": 167, ""no_unique_partial_form"": 1015, ""ok"": 15, ""oracle_wrong_on_original"": 73, ""oracle_wrong_on_rewrite"": 23, ""panel_missing"": 1, ""panel_rejects"": 206}"
+fda.L2,1500,1259,1036,821,31,31,28,3,0,"{""name_leak_strict"": 18, ""no_identity"": 167, ""not_unique"": 56, ""ok"": 31, ""oracle_missing"": 6, ""oracle_wrong_on_original"": 235, ""oracle_wrong_on_rewrite"": 252, ""panel_rejects"": 735}"
+mhrag.L2,1500,1436,971,763,21,21,17,4,0,"{""answer_leak"": 1, ""name_leak_strict"": 48, ""no_identity"": 10, ""ok"": 21, ""oracle_missing"": 2, ""oracle_wrong_on_original"": 463, ""oracle_wrong_on_rewrite"": 287, ""panel_rejects"": 663, ""too_few_facts"": 5}"
+qasper.L1,910,896,477,438,92,92,72,20,0,"{""no_unique_partial_form"": 14, ""ok"": 92, ""oracle_wrong_on_original"": 428, ""oracle_wrong_on_rewrite"": 102, ""panel_rejects"": 274}"
+qasper.L2,910,876,477,373,172,172,135,37,0,"{""name_leak_strict"": 31, ""not_unique"": 3, ""ok"": 172, ""oracle_wrong_on_original"": 418, ""oracle_wrong_on_rewrite"": 162, ""panel_rejects"": 124}"
+fin.L1,400,377,0,0,0,377,297,80,resolution-only,"{""no_identity"": 19, ""no_unique_partial_form"": 4, ""ok"": 377}"
+fin.L2,400,361,0,0,0,361,284,77,resolution-only,"{""name_leak_strict"": 8, ""no_identity"": 19, ""not_unique"": 12, ""ok"": 361}"

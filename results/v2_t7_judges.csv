@@ -1,0 +1,7 @@
+comparison,n,agreement,cohen_kappa
+claude-haiku-5-5 vs openai/gpt-oss-120b,2846,0.8942,0.7619
+claude-haiku-5-5 vs claude-sonnet-5-5,2739,0.9343,0.8527
+openai/gpt-oss-120b vs claude-sonnet-5-5,2739,0.8927,0.7640
+panel majority vs claude-haiku-5-5,2739,0.9697,0.9320
+"deterministic (token F1 >= 0.5, cuad) vs claude-haiku-5-5",8627,0.7872,0.4144
+"deterministic (exact match, short answers, mhrag) vs claude-haiku-5-5",7026,0.7679,0.5393

@@ -1,0 +1,8 @@
+stage,model,usd
+generate,claude-haiku-5-5,4.4621
+generate,claude-sonnet-5-5,5.8264
+generate,openai/gpt-oss-120b,1.2058
+judge,claude-haiku-5-5,1.7127
+judge,openai/gpt-oss-120b,0.5561
+route,claude-haiku-5-5,0.1328
+route,openai/gpt-oss-120b,0.0927
