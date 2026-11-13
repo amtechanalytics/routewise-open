@@ -1,0 +1,157 @@
+{
+  "pins": [
+    {
+      "name": "finder_queries",
+      "record": "hf:Linq-AI-Research/FinDER@c4c1b6454aef7f0bb1c37235c7f52ce644642da0",
+      "title": "FinDER: 5,703 expert-annotated query-evidence-answer triplets over 10-K filings (train split, parquet)",
+      "url": "https://huggingface.co/datasets/Linq-AI-Research/FinDER/resolve/c4c1b6454aef7f0bb1c37235c7f52ce644642da0/data/train-00000-of-00001.parquet",
+      "file": "train-00000-of-00001.parquet",
+      "size": 13097307,
+      "sha256": "213395beb38a075dcc7b23f8e213ccbd2768df0f5c615479c33e10ce8cc267f1",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "CC BY-NC 4.0 (evaluation use with citation; not redistributed)",
+      "note": "parquet columns checked by pilot D10: _id, text, reasoning, category, references, answer, type; 5,703 rows"
+    },
+    {
+      "name": "finder_10k",
+      "record": "hf:Linq-AI-Research/FinDER@c4c1b6454aef7f0bb1c37235c7f52ce644642da0",
+      "title": "FinDER 10-K corpus archive (10-k.zip)",
+      "url": "https://huggingface.co/datasets/Linq-AI-Research/FinDER/resolve/c4c1b6454aef7f0bb1c37235c7f52ce644642da0/10-k.zip",
+      "file": "10-k.zip",
+      "size": 142455472,
+      "sha256": "4e1bff2b5e37ba3429d3ddb8a15d447c7903d4fafd59a4efdbefba08a2036aa0",
+      "format": "binary",
+      "unpack": "zip",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "CC BY-NC 4.0 (FinDER); underlying filings are public SEC records",
+      "note": "contents not described by the host; pilot D10 requires >= 400 filings with ticker keys"
+    },
+    {
+      "name": "hdrr_repo",
+      "record": "25fc8b7c957b8050329e06dc291af0ab20dca8ce",
+      "title": "zhycheng614/financial-RAG-pipeline (HDRR code and fixed FinDER query splits)",
+      "url": "https://github.com/ANON-ORG/financial-RAG-pipeline.git",
+      "file": "financial-RAG-pipeline",
+      "format": "git",
+      "count_glob": "Linq-AI-Research_FinDER-300-0*.csv",
+      "count_roots": [
+        "random_queries_csv"
+      ],
+      "min_rows": 5,
+      "expected_rows": 5,
+      "columns": [
+        "random_queries_csv/Linq-AI-Research_FinDER-300-01.csv",
+        "random_queries_csv/Linq-AI-Research_FinDER-300-02.csv",
+        "random_queries_csv/Linq-AI-Research_FinDER-300-03.csv",
+        "random_queries_csv/Linq-AI-Research_FinDER-300-04.csv",
+        "random_queries_csv/Linq-AI-Research_FinDER-300-05.csv"
+      ],
+      "licence": "MIT",
+      "note": "five 300-row split CSVs directly under random_queries_csv/ (1,500 rows, 1,354 unique FinDER ids), verified by a shallow fetch of the commit on 9 Nov 2026"
+    },
+    {
+      "name": "fdarxbench",
+      "record": "019785d2802c4ceec583e4d4b82b902d7a8f9910",
+      "title": "xiongbetty/FDARxBench (700 FDA drug labels, 17,223 QA)",
+      "url": "https://github.com/ANON-ORG/FDARxBench.git",
+      "file": "FDARxBench",
+      "format": "git",
+      "count_glob": "**/*.jsonl",
+      "count_roots": [
+        "data"
+      ],
+      "min_rows": 3,
+      "expected_rows": 3,
+      "columns": [
+        "data/labels/labels.jsonl",
+        "data/qa/qa.jsonl"
+      ],
+      "licence": "Apache-2.0 (repository); labels are U.S. government records",
+      "note": "three jsonl files at the pinned commit (data/labels/labels.jsonl, data/qa/qa.jsonl, data/qa/qa_toy.jsonl), verified by a shallow fetch of the commit on 9 Nov 2026; count_glob is recursive because the files sit in subfolders of data/"
+    },
+    {
+      "name": "cuad",
+      "record": "github:TheAtticusProject/cuad@67faa0e6023b04fcaae6cc09497ab00e5d63a2a2",
+      "title": "CUAD v1 (510 commercial contracts, SQuAD-format QA: test.json, train_separate_questions.json)",
+      "url": "https://github.com/ANON-ORG/cuad/raw/67faa0e6023b04fcaae6cc09497ab00e5d63a2a2/data.zip",
+      "file": "data.zip",
+      "format": "binary",
+      "unpack": "zip",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "CC BY 4.0",
+      "note": "size and sha256 taken from the blob at the pinned commit (shallow git fetch, 9 Nov 2026)",
+      "size": 18309308,
+      "sha256": "f8161d18bea4e9c05e78fa6dda61c19c846fb8087ea969c172753bc2f45b999a"
+    },
+    {
+      "name": "md2d",
+      "record": "doc2dial.github.io/multidoc2dial (MultiDoc2Dial v1)",
+      "title": "MultiDoc2Dial: 488 government documents and grounded dialogues",
+      "url": "https://doc2dial.github.io/multidoc2dial/file/multidoc2dial.zip",
+      "file": "multidoc2dial.zip",
+      "format": "binary",
+      "unpack": "zip",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "CC BY 3.0 (doc2dial data)",
+      "note": "size and sha256 not published by the host: locked on the first verified download"
+    },
+    {
+      "name": "qasper_test",
+      "record": "hf:allenai/qasper@refs/convert/parquet",
+      "title": "Qasper test split (416 NLP papers with questions and evidence), parquet",
+      "url": "https://huggingface.co/datasets/allenai/qasper/resolve/refs%2Fconvert%2Fparquet/qasper/test/0000.parquet",
+      "file": "0000.parquet",
+      "size": 7074873,
+      "sha256": "206d05a86672dc330a47de4ff95eb0042d5ce0c74a84885bc3d15c36ae67b86e",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "CC BY 4.0"
+    },
+    {
+      "name": "mhrag_corpus",
+      "record": "hf:yixuantt/MultiHopRAG@71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82",
+      "title": "MultiHop-RAG corpus (609 news articles)",
+      "url": "https://huggingface.co/datasets/yixuantt/MultiHopRAG/resolve/71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82/corpus.json",
+      "file": "corpus.json",
+      "size": 6785567,
+      "format": "json",
+      "encoding": "utf-8",
+      "min_rows": 600,
+      "expected_rows": 609,
+      "columns": [
+        "title",
+        "source",
+        "published_at",
+        "body"
+      ],
+      "licence": "ODC-BY",
+      "note": "no published sha256 (non-LFS file): locked on the first verified download"
+    },
+    {
+      "name": "mhrag_queries",
+      "record": "hf:yixuantt/MultiHopRAG@71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82",
+      "title": "MultiHop-RAG queries (2,556)",
+      "url": "https://huggingface.co/datasets/yixuantt/MultiHopRAG/resolve/71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82/MultiHopRAG.json",
+      "file": "MultiHopRAG.json",
+      "size": 5171312,
+      "format": "json",
+      "encoding": "utf-8",
+      "min_rows": 2500,
+      "expected_rows": 2556,
+      "columns": [
+        "query",
+        "answer",
+        "question_type",
+        "evidence_list"
+      ],
+      "licence": "ODC-BY",
+      "note": "no published sha256 (non-LFS file): locked on the first verified download"
+    }
+  ]
+}

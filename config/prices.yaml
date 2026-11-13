@@ -1,0 +1,32 @@
+# USD per million tokens. Verified against the vendor pricing page on as_of; one source URL per model.
+as_of: "2026-11-09"
+models:
+  claude-haiku-5-5:              # prompts up to 100,000 tokens (every prompt here is far below)
+    input_per_mtok: 0.10
+    output_per_mtok: 0.50
+    cache_write_per_mtok: 0.125
+    cache_read_per_mtok: 0.01
+    batch_discount: 0.5
+    source: "https://platform.claude.com/docs/en/about-claude/pricing"
+  claude-sonnet-5-5:
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cache_write_per_mtok: 2.50
+    cache_read_per_mtok: 0.10
+    batch_discount: 0.5
+    source: "https://platform.claude.com/docs/en/about-claude/pricing"
+  openai/gpt-oss-120b:
+    input_per_mtok: 0.15
+    cache_read_per_mtok: 0.075
+    output_per_mtok: 0.60
+    batch_discount: 1.0
+    source: "https://console.groq.com/docs/model/openai/gpt-oss-120b"
+  text-embedding-3-small:
+    input_per_mtok: 0.02
+    output_per_mtok: 0.0
+    batch_discount: 1.0
+    source: "https://developers.openai.com/api/docs/models/text-embedding-3-small"
+compute:
+  gp3_per_gb_month: 0.08     # us-east-1 gp3 storage; https://aws.amazon.com/ebs/pricing/
+  m7i.4xlarge: {per_hour: 0.8064, source: "https://aws.amazon.com/ec2/pricing/on-demand/"}
+  m7i.large: {per_hour: 0.1008, source: "https://aws.amazon.com/ec2/pricing/on-demand/"}

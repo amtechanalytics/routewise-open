@@ -1,0 +1,140 @@
+{
+  "pins": [
+    {
+      "name": "finder_queries",
+      "record": "fixture:tests/fixtures/routewise/finder_queries.jsonl",
+      "title": "fixture FinDER rows (jsonl stands in for parquet)",
+      "url": "file://tests/fixtures/routewise/finder_queries.jsonl",
+      "file": "finder_queries.jsonl",
+      "size": 6135,
+      "sha256": "3bced1be3cd31973fce57468c16a5d8adff031704356a2646323e38d9621d59b",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "test fixture, no licence needed"
+    },
+    {
+      "name": "finder_10k",
+      "record": "fixture:tests/fixtures/routewise/finder_10k.zip",
+      "title": "fixture 10-K archive",
+      "url": "file://tests/fixtures/routewise/finder_10k.zip",
+      "file": "finder_10k.zip",
+      "size": 2598,
+      "sha256": "f03eff4037055b3bebb66efc0a562003fea938f6e2637072bd521c4d14af0873",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "test fixture, no licence needed",
+      "unpack": "zip"
+    },
+    {
+      "name": "hdrr_repo",
+      "record": "fixture:tests/fixtures/routewise/hdrr_repo.zip",
+      "title": "fixture HDRR query splits",
+      "url": "file://tests/fixtures/routewise/hdrr_repo.zip",
+      "file": "hdrr_repo.zip",
+      "size": 1784,
+      "sha256": "88b4c5b38782fae21d3976218cc40adc3e84eb858216c8766f2068579d80dd61",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "test fixture, no licence needed",
+      "unpack": "zip"
+    },
+    {
+      "name": "fdarxbench",
+      "record": "fixture:tests/fixtures/routewise/fdarxbench.zip",
+      "title": "fixture FDARxBench tree",
+      "url": "file://tests/fixtures/routewise/fdarxbench.zip",
+      "file": "fdarxbench.zip",
+      "size": 2879,
+      "sha256": "575a66696c2fb6f7b568d71b371bd4a6aee447471eae209fcbce70c324258945",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "test fixture, no licence needed",
+      "unpack": "zip"
+    },
+    {
+      "name": "cuad",
+      "record": "fixture:tests/fixtures/routewise/cuad.zip",
+      "title": "fixture CUAD archive",
+      "url": "file://tests/fixtures/routewise/cuad.zip",
+      "file": "cuad.zip",
+      "size": 2837,
+      "sha256": "16f01fc90c91197cc5f597008c23b311421cb471851e336d79bdc914513afa91",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "test fixture, no licence needed",
+      "unpack": "zip"
+    },
+    {
+      "name": "md2d",
+      "record": "fixture:tests/fixtures/routewise/md2d.zip",
+      "title": "fixture MultiDoc2Dial archive",
+      "url": "file://tests/fixtures/routewise/md2d.zip",
+      "file": "md2d.zip",
+      "size": 2474,
+      "sha256": "8fa4c0997a5dd303044f07b017416f95393699061fb58fe8f866198cd5034292",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "test fixture, no licence needed",
+      "unpack": "zip"
+    },
+    {
+      "name": "qasper_test",
+      "record": "fixture:tests/fixtures/routewise/qasper_test.jsonl",
+      "title": "fixture Qasper rows (jsonl stands in for parquet)",
+      "url": "file://tests/fixtures/routewise/qasper_test.jsonl",
+      "file": "qasper_test.jsonl",
+      "size": 5610,
+      "sha256": "4f14b406a3f071a9a9cb87b0057d9d03d338060b2d329bf3b3882632cb52e1bc",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "test fixture, no licence needed"
+    },
+    {
+      "name": "mhrag_corpus",
+      "record": "fixture:tests/fixtures/routewise/mhrag_corpus.json",
+      "title": "fixture mhrag_corpus.json",
+      "url": "file://tests/fixtures/routewise/mhrag_corpus.json",
+      "file": "mhrag_corpus.json",
+      "size": 9698,
+      "sha256": "9b085d9e95797c8f43b8e569b01eace767a0276ab1c953db3eeb5ba89093c09f",
+      "format": "json",
+      "encoding": "utf-8",
+      "min_rows": 6,
+      "expected_rows": 6,
+      "columns": [
+        "title",
+        "source",
+        "published_at",
+        "body"
+      ],
+      "licence": "test fixture, no licence needed"
+    },
+    {
+      "name": "mhrag_queries",
+      "record": "fixture:tests/fixtures/routewise/mhrag_queries.json",
+      "title": "fixture mhrag_queries.json",
+      "url": "file://tests/fixtures/routewise/mhrag_queries.json",
+      "file": "mhrag_queries.json",
+      "size": 4326,
+      "sha256": "13e0e5a567830f2e8e1b3423c9ef359f3b0f6f389e531cea3dab11821475ea63",
+      "format": "json",
+      "encoding": "utf-8",
+      "min_rows": 8,
+      "expected_rows": 8,
+      "columns": [
+        "query",
+        "answer",
+        "question_type",
+        "evidence_list"
+      ],
+      "licence": "test fixture, no licence needed"
+    }
+  ]
+}

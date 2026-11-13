@@ -1,0 +1,44 @@
+# Exact model ids only. Sampling parameters (temperature, top_p) are not allowed: vendor default.
+# accessed: the date the id and its availability were checked (platform.claude.com models overview;
+# console.groq.com model page). Haiku 5.5 / Sonnet 5.5 use adaptive thinking by default; thinking tokens bill
+# as output, so max_output_tokens is generous. Groq: the account has raised limits (decided 8 Nov 2026);
+# tpm_budget/rpm_budget stay at ~70% of the Developer plan until the pilot reads the real headers (A07).
+# v2 launch 2: Haiku 5.5 (router, resolver, generator, judge), gpt-oss-120b and Sonnet 5.5 (judge panel and the
+# rewrite-validity panel), text-embedding-3-small (chunk, card and query embeddings).
+models:
+  - id: claude-haiku-5-5
+    provider: anthropic
+    max_output_tokens: 4000
+    context_tokens: 100000        # kept below the 100K-prompt price threshold on purpose
+    concurrency: 6
+    tpm_budget: 0
+    batch: true
+    batch_size: 5000
+    accessed: "2026-11-08"
+  - id: openai/gpt-oss-120b
+    provider: groq
+    max_output_tokens: 4000
+    context_tokens: 131072
+    concurrency: 8
+    tpm_budget: 175000
+    rpm_budget: 700
+    batch: false
+    accessed: "2026-11-08"
+  - id: claude-sonnet-5-5
+    provider: anthropic
+    max_output_tokens: 4000
+    context_tokens: 1000000
+    concurrency: 4
+    tpm_budget: 0
+    batch: true
+    batch_size: 2000
+    accessed: "2026-11-08"
+  - id: text-embedding-3-small    # chunk, card and query embeddings (index, rerank, resolve and retrieve stages)
+    provider: openai
+    max_output_tokens: 1          # embeddings return no generated tokens
+    context_tokens: 8191          # per input; inputs are cut to 6,000 characters
+    concurrency: 4
+    tpm_budget: 700000            # ~70% of the Build-tier 1,000,000 TPM; pilot A07 checks the real headroom
+    rpm_budget: 3500
+    batch: false
+    accessed: "2026-11-09"

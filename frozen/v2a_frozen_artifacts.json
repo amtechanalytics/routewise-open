@@ -1,0 +1,14 @@
+{
+ "v2a_cards.jsonl": {
+  "sha256": "affe99550302e619052c1955ff533999bbf1ed2113f26e578493df5cafe1e43e",
+  "size": 11154580
+ },
+ "v2a_edgar_manifest.json": {
+  "sha256": "704c9b244aa96f1ca7e9b70bc43b82445064fc2ef06b5826d93b26623af2e7ec",
+  "size": 370759
+ },
+ "v2a_rewrites.jsonl": {
+  "sha256": "57d16df6d7d7b318e72a3c3008810b2a6d0e530c52f4d99fd76c4d80b539bd3e",
+  "size": 6584396
+ }
+}

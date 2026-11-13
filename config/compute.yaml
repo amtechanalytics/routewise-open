@@ -1,0 +1,5 @@
+instance_type: m7i.4xlarge   # 16 vCPU / 64 GiB: parsing, BM25 and in-memory retrieval over ~400k chunks (embeddings come from the API)
+gpu: false
+root_volume_gb: 120
+ami: ubuntu-24.04            # resolved at launch from the public SSM parameter
+spot: false

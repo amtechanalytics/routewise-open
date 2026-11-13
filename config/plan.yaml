@@ -1,0 +1,68 @@
+# Drives subsampling (pilot/canary) and the pre-run cost projection.
+# Every stage of a pilot/canary works on the same probe queries: the first k of each configuration's fixed order.
+pilot_per_cell: 2          # probe queries per configuration in the pilot (cells per combination)
+canary_per_cell: 6         # probe queries per configuration in the canary
+coverage_dims: [source, config, gen_model]
+min_queries_full: 50       # a configuration with fewer usable queries in the full run fails the corpora gate
+batch_poll_seconds: 30
+stages:                    # cost-projection entries, one per (stage, model); study 3 launch 3a (pre-registration eswa27-13)
+  rewrite_oss:
+    models: [openai/gpt-oss-120b]
+    groups_per_model: 10
+    cells_per_model: 10000
+    avg_prefix_tokens: 330
+    avg_item_tokens: 450
+    avg_out_tokens: 900
+    max_prompt_tokens: 2000
+    batch: false
+    cache: false
+  ogen_haiku:
+    models: [claude-haiku-5-5]
+    groups_per_model: 11
+    cells_per_model: 11000
+    avg_prefix_tokens: 260
+    avg_item_tokens: 2900
+    avg_out_tokens: 700
+    max_prompt_tokens: 5000
+    batch: true
+    cache: false
+  ojudge_haiku:
+    models: [claude-haiku-5-5]
+    groups_per_model: 11
+    cells_per_model: 11000
+    avg_prefix_tokens: 300
+    avg_item_tokens: 700
+    avg_out_tokens: 500
+    max_prompt_tokens: 1600
+    batch: true
+    cache: false
+  panel_sonnet:
+    models: [claude-sonnet-5-5]
+    groups_per_model: 7
+    cells_per_model: 2500
+    avg_prefix_tokens: 450
+    avg_item_tokens: 700
+    avg_out_tokens: 500
+    max_prompt_tokens: 2000
+    batch: true
+    cache: false
+  panel_oss:
+    models: [openai/gpt-oss-120b]
+    groups_per_model: 7
+    cells_per_model: 2500
+    avg_prefix_tokens: 450
+    avg_item_tokens: 700
+    avg_out_tokens: 900
+    max_prompt_tokens: 2000
+    batch: false
+    cache: false
+  embed_openai:
+    models: [text-embedding-3-small]
+    groups_per_model: 1
+    cells_per_model: 320000
+    avg_prefix_tokens: 0
+    avg_item_tokens: 330
+    avg_out_tokens: 0
+    max_prompt_tokens: 2000
+    batch: false
+    cache: false

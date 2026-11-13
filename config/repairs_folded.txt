@@ -1,0 +1,8 @@
+# Repair commits made on an instance that the chat has folded into this harness (one per line: short sha, then a note).
+# new-paper.sh --update refuses a zip that would undo a repair commit not listed here.
+6fddc6b instance repair (run routewise-20261110T002218Z): NBSP/unicode in the registrant-name regex; superseded by paper/sources.py dei_registrant() + registrant_from_text() (whole-filing search, inline-XBRL dei:EntityRegistrantName), which normalise NBSP themselves
+94e43ded Mac certification (10 Nov, v2 launch 1): tests/test_paper_v2a.py loads this repo's paper/ as routewise_paper, because under pytest the tests/demo `paper` package shadowed it; folded unchanged
+47aa838f instance repair (run of v2 launch 1, full rung, 10 Nov): first attempt at "cards: 4 duplicate cell_ids"; the same failure recurred, so it did not fix it; superseded by paper/v2a.py unique_docs() + _dedupe_cells() (the cause: 5 FDARxBench placeholder labels with an empty set_id all parse to the id "fda:"); content not reviewed in the chat, files it touched are overwritten by this zip
+6d4b3116 instance repair (same run): second attempt at the same failure; the failure recurred; superseded as above; content not reviewed in the chat
+dc2c80e7  qvecs calls embed.init(ctx) (instance repair, launch 2 pilot)
+# embed.py repair (commit sha not in the patch; Mac certification or instance, launch 2): embedder() attaches the run config to an embedder created earlier without one; folded unchanged (blob 51221f1)
